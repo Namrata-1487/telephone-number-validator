@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone-number-validator</title>
+
+    <style>
+        * {
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: gray;
+            color: white;
+        }
+
+        .mobileview {
+            background-color: black;
+            padding: 50px 20px 0;
+            height: 70vh;
+            border-radius: 20px;
+
+        }
+input{
+    font-size: large;
+}
+        .bg-secondary {
+            background-color: gray;
+            padding: 20px;
+            height:75%;
+        }
+
+        .row {
+            margin: auto;
+            align-items: center;
+            display: flex;
+            margin: 20px;
+        }
+
+        button {
+            font-size: medium;
+            padding: 3px;
+        }
+
+        span {
+            width: 10px;
+            height: 10px;
+            display: block;
+            background-color: white;
+            color: white;
+            position: absolute;
+            top: 19%;
+            left: 49.5%;
+            border-radius: 50%;
+        }
+        #results-div{
+            padding: 15px 0;
+            font-size: large;
+            text-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mobileview">
+        <span></span>
+        <div class="bg-secondary">
+            <h4>Enter a Phone Number :</h4>
+            <br>
+            <input type="text" id="user-input">
+            <div id="results-div">
+            </div>
+        </div>
+        <div class="row">
+            <button type="button" id="check-btn" value="check">check</button>
+            <button type="button" id="clear-btn" value="clear">clear</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
